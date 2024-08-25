@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>
+        Login
+    </title>
+</head>
+<body>
+    <form>
+        
+        <!-- name ,email and password-->
+        <label for="name">Name :</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" maxlength="25" required ><br><br>
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" placeholder="test@example.com" autofocus required><br><br>
+        <label for="Pswd">Password :</label><br>
+        <input type="password" id="pswd" name="password" minlength="6" required><br><br>
+
+        <!-- Drop Down -->
+        <label for="category">Category :</label>
+        <select id="category" name="category" required>
+            <option value="student">Student</option>
+            <option value="Employee">Employee</option>
+            <option value="freelancer" selected>Freelancer</option>
+        </select><br><br>
+
+        <!--Event Date-->
+        <label for="date">Event Date :</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <!--radio buttons-->
+        <label for="ticket">Tickets :</label>
+        <input type = "radio" name = "ticket1" value = "1">1 Ticket
+        <input type = "radio" name = "ticket2" value = "2" checked>2 Ticket
+        <input type = "radio" name = "ticket3" value = "3">3 Ticket<br><br>
+
+        <!--Checkbox-->
+        <label for="payment">Online Payment :</label>
+        <input type = "checkbox" id="payment" name ="payment" value="online"><br><br>
+
+        <!--Textarea-->
+        <label for="note">Notes :</label><br>
+        <textarea name="note" id="note" placeholder="Enter the details"rows="6" cols="60" ></textarea><br><br>
+
+        <!--Button-->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
